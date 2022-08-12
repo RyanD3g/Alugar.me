@@ -1,0 +1,763 @@
+@font-face {
+    font-family: spartan;
+    src: url('../../public/assets/font/LeagueSpartan-Bold.otf');
+}
+@font-face{
+    font-family: airelon;
+    src: url('../../public/assets/font/aileron-heavy.otf');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.cabecalho{
+    width: 100%;
+    height: 720px;
+    background-color: white;
+}
+
+.menu{
+    width: 100%;
+    height: 120px;
+    background-color: #3FD100;
+    display: flex;
+    flex-direction: row;
+}
+
+.title{
+    float: left;
+    font-size: 24px;
+    font-family: spartan;
+    align-items: center;
+    color: white;
+    margin-top: 42px;
+    margin-left: 40px;
+}
+
+.icon{
+    float: left;
+    width: 59px;
+    margin-top: 34px;
+}
+
+.container_title{
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 100%;
+    margin-left: 80px;
+    animation: title 2s;
+}
+
+.container_menu{
+    float: right;
+    margin-left: 390px;
+    width: 500px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 15px;
+}
+
+.navigation li{
+    float: left;
+    display: inline;
+    color: aliceblue;
+    margin: 7px;
+    margin-top: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.navigation li a{
+    color: white;
+    text-decoration: none;
+}
+
+.navigation li a:hover{
+    color: #EBFF00;
+}
+
+.painel{
+    float: left;
+    width: 560px;
+    height: 400px;
+    background-color: #3FD100;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    animation: animation_painel 3s;
+}
+
+.title_publi{
+    float: left;
+    color: #EBFF00;
+    font-family: airelon;
+    font-size: 40px;
+    margin-left: 45px;
+    margin-top: 34px;
+    animation: titles 3s;
+}
+
+.title_publi2{
+    margin-top: 30px;
+    font-size: 50px;
+    color: white;
+    font-family: airelon;
+    margin-left: 45px;
+    padding: 0;
+    animation: titles 3s;
+}
+
+.imagem_casa{
+    width: 600px;
+    margin-left: 30px;
+    margin-top: 60px;
+}
+
+
+
+
+
+/*
+
+
+   ----> ANIMAÇÕES <----
+
+
+*/
+
+
+@keyframes animation_painel {
+    from{
+        width: 0;
+    }
+    to{
+        
+    }
+}
+
+@keyframes titles {
+    from{
+        margin-top: 370px;
+        opacity: 0;
+    }
+    to{
+        
+    }
+}
+
+@keyframes title {
+    from{
+        margin-left: 0;
+    }
+    to{
+        
+    }
+}
+
+
+
+
+
+/*
+
+
+   ----> RESPONSIVIDADE DO CONTEÚDO DO MENU <----
+
+
+*/
+
+
+@media (max-width:1257px) {
+    .title{
+        float: left;
+        font-size: 20px;
+        font-family: spartan;
+        align-items: center;
+        color: white;
+        margin-top: 42px;
+        margin-left: 40px;
+    }
+    
+    img{
+        float: left;
+        width: 55px;
+        margin-top: 34px;
+    }
+}
+
+@media (max-width:1124px) {
+    .container_menu{
+        float: right;
+        margin-left: 390px;
+        width: 500px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 10px 15px;
+    }
+    
+    .navigation li{
+        float: left;
+        display: inline;
+        color: aliceblue;
+        margin: 7px;
+        margin-top: 35px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+    }
+}
+
+@media (max-width:1088px) {
+    .navigation li{
+        float: left;
+        display: inline;
+        color: aliceblue;
+        margin: 7px;
+        margin-top: 35px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+    }
+}
+
+@media (max-width:1081px) {
+    .title{
+        float: left;
+        font-size: 18px;
+        font-family: spartan;
+        align-items: center;
+        color: white;
+        margin-top: 42px;
+        margin-left: 40px;
+    }
+    
+    .icon{
+        float: left;
+        width: 50px;
+        margin-top: 34px;
+    }
+}
+
+@media (max-width:1036px) {
+    .container_title{
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        height: 100%;
+        margin-left: 60px;
+    }
+    
+}
+
+@media (max-width:1016px) {
+    .container_title{
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        height: 100%;
+        margin-left: 40px;
+    }
+}
+
+@media (max-width:996px) {
+    .container_title{
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        height: 100%;
+        margin-left: 20px;
+    }
+}
+
+@media (max-width:964px) {
+    .container_title{
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        height: 100%;
+        margin-left: 0px;
+    }
+}
+
+@media (max-width:906px) {
+    .container_menu{
+        float: right;
+        margin-left: 300px;
+        width: 500px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 10px 15px;
+    }
+    
+    .navigation li{
+        float: left;
+        display: inline;
+        color: aliceblue;
+        margin: 7px;
+        margin-top: 35px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+    }
+    .container_title{
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        height: 100%;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width:754px) {
+    .container_menu{
+        float: right;
+        margin-left: 200px;
+        width: 500px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 10px 15px;
+    }
+    
+    .navigation li{
+        float: left;
+        display: inline;
+        color: aliceblue;
+        margin: 7px;
+        margin-top: 35px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 9px;
+    }
+    .container_title{
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        height: 100%;
+        margin-left: 10px;
+    }
+
+}
+
+
+@media (max-width:700px) {
+    .container_menu{
+        float: right;
+        margin-left: 100px;
+        width: 500px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 10px 15px;
+    }
+    
+    .navigation li{
+        float: left;
+        display: inline;
+        color: aliceblue;
+        margin: 7px;
+        margin-top: 35px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 9px;
+    }
+    .container_title{
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        height: 100%;
+        margin-left: 10px;
+    }
+
+}
+
+@media (max-width:700px) {
+    .container_menu{
+        float: right;
+        margin-left: 50px;
+        width: 500px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 10px 15px;
+    }
+    
+    .navigation li{
+        float: left;
+        display: inline;
+        color: aliceblue;
+        margin: 7px;
+        margin-top: 35px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 9px;
+    }
+    .container_title{
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        height: 100%;
+        margin-left: 10px;
+    }
+
+}
+
+
+
+/*
+
+
+    ----> RESPONSIVIDADE DO CONTEÚDO <----
+
+
+
+*/
+
+
+@media (max-width:1204px) {
+    .painel{
+        float: left;
+        width: 500px;
+        height: 335px;
+        background-color: #3FD100;
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        animation: animation_painel 3s;
+    }
+    
+    .title_publi{
+        float: left;
+        color: #EBFF00;
+        font-family: airelon;
+        font-size: 30px;
+        margin-left: 45px;
+        margin-top: 34px;
+        animation: titles 3s;
+    }
+    
+    .title_publi2{
+        margin-top: 30px;
+        font-size: 50px;
+        color: white;
+        font-family: airelon;
+        margin-left: 45px;
+        padding: 0;
+        animation: titles 3s;
+    }
+    
+    .imagem_casa{
+        width: 500px;
+        margin-left: 30px;
+        margin-top: 60px;
+    }
+}
+
+@media (max-width:1044px) {
+    .painel{
+        float: left;
+        width: 500px;
+        height: 301px;
+        background-color: #3FD100;
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        animation: animation_painel 3s;
+    }
+    
+    .title_publi{
+        float: left;
+        color: #EBFF00;
+        font-family: airelon;
+        font-size: 30px;
+        margin-left: 45px;
+        margin-top: 34px;
+        animation: titles 3s;
+    }
+    
+    .title_publi2{
+        margin-top: 15px;
+        font-size: 45px;
+        color: white;
+        font-family: airelon;
+        margin-left: 45px;
+        padding: 0;
+        animation: titles 3s;
+    }
+    
+    .imagem_casa{
+        width: 450px;
+        margin-left: 30px;
+        margin-top: 60px;
+    }
+}
+
+@media (max-width:994px) {
+    .painel{
+        float: left;
+        width: 400px;
+        height: 279px;
+        background-color: #3FD100;
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        animation: animation_painel 3s;
+    }
+    
+    .title_publi{
+        float: left;
+        color: #EBFF00;
+        font-family: airelon;
+        font-size: 20px;
+        margin-left: 45px;
+        margin-top: 34px;
+        animation: titles 3s;
+    }
+    
+    .title_publi2{
+        margin-top: 15px;
+        font-size: 35px;
+        color: white;
+        font-family: airelon;
+        margin-left: 45px;
+        padding: 0;
+        animation: titles 3s;
+    }
+    .imagem_casa{
+        width: 420px;
+        margin-left: 30px;
+        margin-top: 60px;
+    }
+}
+
+@media (max-width:956px) {
+    .container_title{
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        height: 100%;
+        margin-left: 0px;
+    }
+    .title{
+        float: left;
+        font-size: 18px;
+        font-family: spartan;
+        align-items: center;
+        color: white;
+        margin-top: 42px;
+        margin-left: 20px;
+    }
+    
+    .icon{
+        float: left;
+        width: 50px;
+        margin-top: 34px;
+    }
+}
+
+@media (max-width:844px) {
+    .cabecalho{
+        width: 100%;
+        height: 250px;
+    }
+    .painel{
+        float: left;
+        width: 300px;
+        height: 247px;
+        background-color: #3FD100;
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        animation: animation_painel 3s;
+    }
+    
+    .title_publi{
+        float: left;
+        color: #EBFF00;
+        font-family: airelon;
+        font-size: 20px;
+        margin-left: 45px;
+        margin-top: 14px;
+        animation: titles 3s;
+    }
+    
+    .title_publi2{
+        margin-top: 15px;
+        font-size: 35px;
+        color: white;
+        font-family: airelon;
+        margin-left: 45px;
+        padding: 0;
+        animation: titles 3s;
+    }
+    .imagem_casa{
+        width: 370px;
+        margin-left: 20px;
+        margin-top: 60px;
+    }
+}
+
+@media (max-width:649px) {
+    .cabecalho{
+        width: 100%;
+        height: 250px;
+    }
+    .painel{
+        float: left;
+        width: 300px;
+        height: 181px;
+        background-color: #3FD100;
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        animation: animation_painel 3s;
+    }
+    
+    .title_publi{
+        float: left;
+        color: #EBFF00;
+        font-family: airelon;
+        font-size: 20px;
+        margin-left: 45px;
+        margin-top: 14px;
+        animation: titles 3s;
+    }
+    
+    .title_publi2{
+        margin-top: 15px;
+        font-size: 25px;
+        color: white;
+        font-family: airelon;
+        margin-left: 45px;
+        padding: 0;
+        animation: titles 3s;
+    }
+    .imagem_casa{
+        width: 270px;
+        margin-left: 20px;
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 604px) {
+    .painel{
+        float: left;
+        width: 280px;
+        height: 180px;
+        background-color: #3FD100;
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        animation: animation_painel 3s;
+    }
+}
+
+@media (max-width: 584px) {
+    .cabecalho{
+        width: 100%;
+        height: 250px;
+    }
+    .painel{
+        float: left;
+        width: 300px;
+        height: 181px;
+        background-color: #3FD100;
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        animation: animation_painel 3s;
+    }
+    
+    .title_publi{
+        float: left;
+        color: #EBFF00;
+        font-family: airelon;
+        font-size: 20px;
+        margin-left: 45px;
+        margin-top: 14px;
+        animation: titles 3s;
+    }
+    
+    .title_publi2{
+        margin-top: 15px;
+        font-size: 25px;
+        color: white;
+        font-family: airelon;
+        margin-left: 45px;
+        padding: 0;
+        animation: titles 3s;
+    }
+    .imagem_casa{
+        width: 1px;
+        margin-left: 20px;
+        margin-top: 60px;
+    }
+}
+
+
+@media (max-width: 565px) {
+    .container_title{
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        height: 100%;
+        margin-left: 0px;
+    }
+    .title{
+        float: left;
+        font-size: 14px;
+        font-family: spartan;
+        align-items: center;
+        color: white;
+        margin-top: 42px;
+        margin-left: 20px;
+    }
+    
+    .icon{
+        float: left;
+        width: 40px;
+        margin-top: 34px;
+    }
+    .painel{
+        float: left;
+        width: 350px;
+        height: 281px;
+        background-color: #3FD100;
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        animation: animation_painel 3s;
+    }
+    .title_publi{
+        float: left;
+        color: #EBFF00;
+        font-family: airelon;
+        font-size: 30px;
+        margin-left: 45px;
+        margin-top: 14px;
+        animation: titles 3s;
+    }
+    
+    .title_publi2{
+        margin-top: 15px;
+        font-size: 40px;
+        color: white;
+        font-family: airelon;
+        margin-left: 45px;
+        padding: 0;
+        animation: titles 3s;
+    }
+}
+
+@media (max-width: 473px) {
+    .navigation li{
+        float: left;
+        display: inline;
+        color: aliceblue;
+        margin: 7px;
+        margin-top: 38px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 7px;
+    }
+}
