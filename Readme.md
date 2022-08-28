@@ -1,6 +1,8 @@
-=> Projeto criado por: Ryan Dias Marinho (RyanD3g) 
+### Aluguel de casas com ReactJS
 
-=> [ X ] Versão Beta do projeto [ X ] 
+<div>
+  <h4> -- Versão Beta do projeto -- </h4>
+</div>
 
-=> [ + ] Em desenvolvimento [ + ]
+- Projeto criado por: Ryan Dias Marinho (RyanD3g) 
 
